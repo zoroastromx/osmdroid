@@ -22,6 +22,7 @@ import org.osmdroid.config.Configuration;
 import org.osmdroid.debug.CacheAnalyzerActivity;
 import org.osmdroid.diag.DiagnosticsActivity;
 import org.osmdroid.intro.IntroActivity;
+import org.osmdroid.library.BuildConfig;
 import org.osmdroid.samples.SampleWithMinimapItemizedoverlay;
 import org.osmdroid.samples.SampleWithTilesOverlay;
 import org.osmdroid.samples.SampleWithTilesOverlayAndCustomTileSource;
@@ -49,18 +50,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setSupportActionBar(myToolbar);
         // Generate a ListView with Sample Maps
         final ArrayList<String> list = new ArrayList<>();
-        list.add("OSMDroid Sample Map (Start Here)");
+        //list.add("OSMDroid Sample Map (Start Here)");
+        list.add(getString(R.string.string_star));
         list.add("Sample with ItemizedOverlay");
         list.add("Sample with TilesOverlay");
         list.add("Sample with TilesOverlay and custom TileSource");
-        list.add("More Samples");
+        //list.add("More Samples");
+        list.add(getString(R.string.string_more_samples));
 
-        list.add("Report a Bug");
+        //list.add("Report a Bug");
+        list.add(getString(R.string.string_repo_bug));
         list.add("Settings");
         list.add("Bug Drivers");
         list.add("Diagnostics");
-        list.add("View the Intro again");
-        list.add("Licenses");
+///        list.add(getString(R.string.string_diagnostics)); // me marca error
+        //list.add("View the Intro again");
+        list.add(getString(R.string.string_view_intro));
+        //list.add("Licenses");
+        list.add(getString(R.string.string_licenses));
         list.add("Cache Analyzer");
 
         ListView lv = findViewById(R.id.activitylist);
@@ -221,7 +228,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
 
         tv = findViewById(R.id.version_text);
-        tv.setText(BuildConfig.VERSION_NAME + " " + BuildConfig.BUILD_TYPE);
+        tv.setText(BuildConfig.BUILD_TYPE + " " + BuildConfig.BUILD_TYPE);
 
         tv = findViewById(R.id.mainstorageInfo);
         tv.setText(Configuration.getInstance().getOsmdroidTileCache().getAbsolutePath() + "\n" +
