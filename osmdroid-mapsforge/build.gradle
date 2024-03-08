@@ -24,6 +24,7 @@ android {
             withJavadocJar()
         }
     }
+    namespace 'org.osmdroid.mapsforge'
 }
 
 dependencies {

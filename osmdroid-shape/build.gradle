@@ -12,9 +12,6 @@ android {
         minSdkVersion Integer.parseInt(project.property('android-minSdkForSupportLib.version'))
     }
 
-    lintOptions {
-        abortOnError false
-    }
     buildTypes {
         release {
             minifyEnabled false
@@ -26,6 +23,10 @@ android {
             withSourcesJar()
             withJavadocJar()
         }
+    }
+    namespace 'org.osmdroid.shape'
+    lint {
+        abortOnError false
     }
 }
 

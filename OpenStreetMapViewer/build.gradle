@@ -33,9 +33,6 @@ android {
 
         versionName project.version
     }
-    lintOptions {
-        abortOnError false
-    }
 
     testOptions {
         unitTests.all {
@@ -47,11 +44,15 @@ android {
             }
         }
     }
-
     packagingOptions {
-        pickFirst "androidsupportmultidexversion.txt"
-        pickFirst "META-INF/AL2.0"
-        pickFirst "META-INF/LGPL2.1"
+        resources {
+            pickFirsts += ['androidsupportmultidexversion.txt', 'META-INF/AL2.0', 'META-INF/LGPL2.1']
+        }
+    }
+
+    namespace 'org.osmdroid'
+    lint {
+        abortOnError false
     }
 
 

@@ -38,6 +38,7 @@ android {
     lint {
         baseline = file("lint-baseline.xml")
     }
+    namespace 'org.osmdroid.simplemap'
 }
 
 dependencies {

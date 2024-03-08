@@ -14,10 +14,7 @@ android {
         targetSdkVersion  findProperty('android.targetSdkVersion').toInteger()
     }
 
-    lintOptions {
-        abortOnError false
-    }
-	testOptions { 
+    testOptions {
        unitTests.returnDefaultValues = true
    }
     buildTypes {
@@ -30,6 +27,10 @@ android {
             withSourcesJar()
             withJavadocJar()
         }
+    }
+    namespace 'org.osmdroid.library'
+    lint {
+        abortOnError false
     }
 }
 

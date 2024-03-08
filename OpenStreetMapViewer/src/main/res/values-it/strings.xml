@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name" translatable="true">Abrir mapa it</string>
+
     <string name="unknown">Sconosciuta</string>
     <string name="map_mode">Tipo mappa</string>
     <string name="my_location">La mia posizione</string>
     <string name="about">Info</string>
     <string name="about_message">Questo software usa dati delle mappe forniti da OpenStreetMap.org</string>
     <string name="osmdroid_welcome">Benvenuti nel esempio app osmdroid . Questa applicazione viene utilizzata per dimostrare alcune delle caratteristiche e delle funzioni osmdroid\'s . Godere! Si prega di segnalare eventuali problemi a https://github.com/osmdroid/osmdroid</string>
+    <string name="samples">Ejemplos it</string>
+    <string name="offline">Modo OffLine</string>
+    <string name="compass">Brújula it</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cache_current_size">Medida actual de caché</string>
+    <string name="cache_manager">Administrador de caché</string>
+    <string name="enter_cache_location">De una ubicación de caché</string>
+    <string name="pick_cache_location">Elije una ubicación de caché</string>
+    <string name="enter_base_location">De una ubicación base</string>
+    <string name="pick_base_location">Elija una ubicación base</string>
+    <string name="enterCacheLocation">Elija ubicación</string>
+    <string name="yes">Sí</string>
+    <string name="previous">Anterior</string>
+    <string name="next">Siguiente</string>
+    <string name="close">Cerrar</string>
+    <string name="string_repo_bug">Reporta bug</string>
+    <string name="string_more_samples">Más ejemplos</string>
+    <string name="string_star">OSMDroid Sample Map (Inicia aquí)</string>
+    <string name="string_view_intro">Ver de nuevo el intro</string>
+    <string name="string_licenses">Licencias</string>
+    <string name="string_diagnostics">Diagnósticos</string>
 </resources>

@@ -14,4 +14,12 @@
         <item name="android:layout_height">?attr/actionBarSize</item>
     </style>
 
+    <string name="unknown2" translatable="false">Unknown</string>
+    <string name="map_mode2" translatable="false">Map Source</string>
+    <string name="my_location2" translatable="false">My location</string>
+    <string name="offline2" translatable="false">Offline mode</string>
+    <string name="samples2" translatable="false">Samples</string>
+    <string name="about2" translatable="false">About</string>
+    <string name="about_message2" translatable="false">This software uses map data provided by OpenStreetMap.org</string>
+
 </resources>
